@@ -1,1 +1,11 @@
-<p>home works!</p>
+<form [formGroup]="form">
+    <app-input-custom formControlName="customControl"></app-input-custom>
+    
+</form> 
+
+<!-- <app-input-custom [(ngModel)]="customValue"></app-input-custom> -->
+
+<button (click)="clickMe()">Click Me</button>
+
+<p>Value: {{ form.get("customControl")?.value }}</p>
+<!-- <p>Value: {{ customValue }}</p> -->

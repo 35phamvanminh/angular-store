@@ -1,0 +1,8 @@
+<input
+  [value]="value"
+  (input)="onInput($event)"
+  [disabled]="isDisabled"
+/>
+<div *ngIf="validationError">
+  <small class="error">{{ validationError }}</small>
+</div>
